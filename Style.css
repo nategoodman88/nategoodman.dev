@@ -33,7 +33,7 @@ a {
 }
 
 .topnav a {
-  float: left;
+  /*float: left;*/
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -41,7 +41,7 @@ a {
   font-size: 17px;
 }
 
-/*.topnav a:hover {
+.topnav a:hover {
   background-color: #ddd;
   color: black;
-} */ 
+} 
