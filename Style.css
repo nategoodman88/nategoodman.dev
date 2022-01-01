@@ -5,8 +5,8 @@ html {
 body {
 	font-family: Verdana;
   font-size: 15px;
-	color:#F5F5F5; 
-  background-color:#484848;
+	color:#ffffff; 
+  background-color:#100d1d;
   background-position: center;
   padding:0;
   margin:0;
@@ -47,8 +47,8 @@ div.hidden3 {
 .tab {
   display: none;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color:#484848;
+  border: 1px solid rgb(0, 0, 0);
+  background-color:#100d1d;
 }
 
 .tab button {
@@ -56,7 +56,7 @@ div.hidden3 {
   font-size: 15px;
   color:#F5F5F5;
   background-color: inherit;
-  float: left;
+  float: center;
   border: none;
   outline: none;
   cursor: pointer;
@@ -65,17 +65,17 @@ div.hidden3 {
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: rgb(54, 54, 54);
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: rgb(0, 0, 0);
 }
 
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #5e5e5e;
   border-top: none;
   animation: fadeEffect 1s;
 } 
