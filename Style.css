@@ -1,8 +1,10 @@
-html {
+html 
+{
   scroll-behavior: smooth;
 }
 
-body {
+body 
+{
 	font-family: Verdana;
   font-size: 15px;
 	color:#ffffff; 
@@ -12,46 +14,55 @@ body {
   margin:0;
 }
 
-h1 {
+h1 
+{
 	font-size: 30px;
 	text-align: center
 }
 
-h2 {
+h2 
+{
 	font-size: 20px;
   font-style: italic;
 	text-align: center
 }
 
-h3 {
+h3 
+{
   font-size: 20px;
   text-align: center
 }
 
-a {
+a 
+{
   text-decoration: none;
 }
 
-div.hidden {
+div.hidden 
+{
   display: none;
 }
 
-div.hidden2 {
+div.hidden2 
+{
   display: none;
 }
 
-div.hidden3 {
+div.hidden3 
+{
   display: none;
 }
 
-.tab {
+.tab 
+{
   display: none;
   overflow: hidden;
   border: 1px solid rgb(0, 0, 0);
   background-color:#100d1d;
 }
 
-.tab button {
+.tab button 
+{
   font-family: Verdana;
   font-size: 15px;
   color:#F5F5F5;
@@ -64,15 +75,18 @@ div.hidden3 {
   transition: 0.3s;
 }
 
-.tab button:hover {
+.tab button:hover 
+{
   background-color: rgb(54, 54, 54);
 }
 
-.tab button.active {
+.tab button.active 
+{
   background-color: rgb(0, 0, 0);
 }
 
-.tabcontent {
+.tabcontent 
+{
   display: none;
   padding: 6px 12px;
   border: 1px solid #5e5e5e;
@@ -80,7 +94,8 @@ div.hidden3 {
   animation: fadeEffect 1s;
 } 
 
-@keyframes fadeEffect {
+@keyframes fadeEffect 
+{
   from {opacity: 0;}
   to {opacity: 1;}
 }
