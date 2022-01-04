@@ -1,101 +1,48 @@
-html 
+/* Default font settings and background color set */
+body
 {
-  scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFF;
+    background-color: rgb(49, 49, 49);
 }
-
-body 
+/*Set headers after the first one to all be the same size*/
+h2, h3, h4, h5, h6
 {
-	font-family: Verdana;
-  font-size: 15px;
-	color:#ffffff; 
-  background-color:#100d1d;
-  background-position: center;
-  padding:0;
-  margin:0;
+    font-size: larger;
 }
-
-h1 
+/*Set CSS for the email form at the end of the page*/
+form
 {
-	font-size: 30px;
-	text-align: center
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-h2 
+/*Sets CSS of1 the headshot*/
+.headshot
 {
-	font-size: 20px;
-  font-style: italic;
-	text-align: center
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
 }
-
-h3 
+/*Sets CSS of the contact icon pictures*/
+.contact-icon
 {
-  font-size: 20px;
-  text-align: center
+    width: 40px;
+    height: 40px; 
 }
-
-a 
+.flex-container
 {
-  text-decoration: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
-
-div.hidden 
+.flex-item
 {
-  display: none;
-}
-
-div.hidden2 
-{
-  display: none;
-}
-
-div.hidden3 
-{
-  display: none;
-}
-
-.tab 
-{
-  display: none;
-  overflow: hidden;
-  border: 1px solid rgb(0, 0, 0);
-  background-color:#100d1d;
-}
-
-.tab button 
-{
-  font-family: Verdana;
-  font-size: 15px;
-  color:#F5F5F5;
-  background-color: inherit;
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-.tab button:hover 
-{
-  background-color: rgb(54, 54, 54);
-}
-
-.tab button.active 
-{
-  background-color: rgb(0, 0, 0);
-}
-
-.tabcontent 
-{
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #5e5e5e;
-  border-top: none;
-  animation: fadeEffect 1s;
-} 
-
-@keyframes fadeEffect 
-{
-  from {opacity: 0;}
-  to {opacity: 1;}
+    padding: 5px;
+    height: auto;
+    width: auto;
+    align-self: center;
 }
