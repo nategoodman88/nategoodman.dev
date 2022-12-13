@@ -80,6 +80,7 @@ form
   word-break: break-word;
   border: 0;
 }
+
 /*CSS for the items contained in the above container*/
 .flex-item
 {
