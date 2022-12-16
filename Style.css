@@ -1,4 +1,4 @@
-/* Default font settings and background color set. Also set fade in animation for 3 seconds to run once and fill forwards from 0 opacity (invisible) to 1 (completely visible) */
+/* Default font settings and background color set. Also set fade in animation for 3 seconds to run once and fill forwards from 0 opacity (invisible) to 1 (completely visible). Key Frames library used for animation*/
 body
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -28,12 +28,7 @@ h2, h3, h4, h5, h6
 {
     font-size: larger;
 }
-/*Set CSS for the email form at the end of the page*/
-form
-{
-    font-family: Arial, Helvetica, sans-serif;
-}
-/*Sets CSS of1 the headshot*/
+/*Sets CSS of the headshot*/
 .headshot
 {
     display: block; 
@@ -48,7 +43,7 @@ form
     width: 40px;
     height: 40px; 
 }
-/*Creates container for flex to display images side by side and center*/
+/*Creates container using flex library to display images side by side and center. Used for Github and LinkedIn icons*/
 .flex-container
 {
     display: flex;
@@ -58,29 +53,6 @@ form
     margin: 0;
     list-style: none;
 }
-
-.button {
-  background: rgb(95, 3, 87);
-  border-radius: 999px;
-  box-shadow: rgb(95, 3, 87) 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
-}
-
 /*CSS for the items contained in the above container*/
 .flex-item
 {
@@ -88,4 +60,64 @@ form
     height: auto;
     width: auto;
     align-self: center;
+}
+/*Button configuration for light and dark mode swapping*/
+.button {
+    background: rgb(95, 3, 87);
+    border-radius: 999px;
+    box-shadow: rgb(95, 3, 87) 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  }
+/*Conainter for view count, copies style of button for consistency but gets rid of button actions since it is not one*/
+.viewsContainer {
+    background: rgb(95, 3, 87);
+    border-radius: 999px;
+    box-shadow: rgb(95, 3, 87) 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+/*Setting up flex container for button and view count to sit side by side. Needs to be new container class because I am aligning right here rather than center like the original*/
+.flex-container2
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/*CSS for the items contained in the above container*/
+.flex-item2
+{
+    padding: 5px;
+    height: auto;
+    width: auto;
+    align-self: left;
 }

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<!--Set responsive view, display Nate Goodman in the tab, link CSS sheet, Javascript and set tab icon-->
+<!--Set responsive view, display Nate Goodman in the tab, link CSS sheet and set tab icon-->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <title>Nate Goodman</title> 
         <link rel="stylesheet" type="text/css" href="Style.css">
-        <script src = "Script.js"></script>
         <link rel="shortcut icon" type="image/ico" href="images/computer.ico">  
     </head>
 <!--Name in the heading with short descriptor on one line below it, phone and email contact on the next and finally a link to my resume on the next-->
@@ -14,7 +13,7 @@
         <p align="center">Information Technology Professional</p>
         <p align="Center">Phone: 231-724-0990 | Email: nategoodman88@gmail.com</p>
         <p align="Center"><a href="https://www.dropbox.com/home?preview=Resume.docx"target="_blank" style="color: #2EB1F8"> <span> Resume </span> </a></p>
-<!--Small headshot in it's own DIV-->       
+<!--Small headshot in it's own div-->       
         <div>
             <img src = "images/Nate.png" class="headshot">
         </div>
@@ -23,8 +22,20 @@
             <li class= "flex-item"><a href="https://www.linkedin.com/in/nathan-goodman-a81051142/"> <img src ="images/LinkedIn.png" class ="contact-icon"></a></li>
             <li class= "flex-item"><a href="https://github.com/nategoodman88"> <img  src ="images/Github.png" class ="contact-icon"></a></li>
         </ol>
-<!--Button that calls the swapMode function in the attaches Javascript file to change between dark mode and normal-->
-        <button onclick="swapMode()" class="button" role="button">Dark Mode On/Off</button>
+<!--Second container/list for button and view counter to sit side by side-->
+        <ol class = "flex-container2">
+            <!--Button that calls the swapMode function in the attached Javascript file to change between dark mode and normal-->
+            <li class = "flex-item2"> 
+                <button onclick="onClick()" class="button" role="button">Dark Mode On/Off</button>
+            </li>
+            <!--Views contatiner, shows page views, WIP
+            <li class = "flex-item2">
+                <div class="viewsContainer" id="viewsCount">
+                    Views Count
+                </div>
+            </li>-->
+        </ol>
+
 <!--Line to divide my intro with the main content-->
         <hr>
 <!--A quick summary-->
@@ -78,7 +89,7 @@
                     <td>Project Management</td>
             </tr>
         </table>
-
+<!--Portfolio list-->
         <h6><i>Portfolio</i></h6>
             <ul>
                 <li><b>Movie Database API</b>
@@ -86,4 +97,8 @@
                 </li>
             </ul>
     </body>
+    <!--Call JS file-->
+    <footer>
+        <script src = "Script.js"></script>
+    </footer>
 </html>

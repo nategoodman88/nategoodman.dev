@@ -1,7 +1,28 @@
+// Checks local storage to see if user preference is saved to darkmode and switches to it if so
+if (localStorage.getItem("darkmode") == "true")
+{
+    document.body.classList =("darkmode");
+}
+// Swaps between light and dark mode on button click
 function swapMode() 
 {
-    // Call variable and set it to the initial body CSS
-    var element = document.body;
-    // Change the variable class to darkmode CSS
-    element.classList.toggle("darkmode");
- }
+    document.body.classList.toggle("darkmode")        
+}
+// Save darkmode preference to local storage
+function updateLocalPref()
+{
+    if (localStorage.getItem("darkmode") == "true")
+    {
+        localStorage.setItem("darkmode", false)
+    }
+    else 
+    {
+        localStorage.setItem("darkmode", true)
+    }
+}
+// Calls both functions in one; for use as button onclick function in index.html
+function onClick()
+{
+    swapMode()
+    updateLocalPref()
+}
