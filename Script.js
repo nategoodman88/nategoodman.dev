@@ -1,4 +1,4 @@
-//Fill in comment here
+//Fucntion to use fetch; calls post to my api to update view count in my database
 function updateViewCount()
 {
     fetch('https://nategoodmandevapi.herokuapp.com/views',
@@ -6,17 +6,16 @@ function updateViewCount()
     .then((response) => { 
         if (response.status == 200) 
         {
-            console.log("Yay")
+            console.log("Success!")
         }
         else 
         {
-            console.log("error")
+            console.log("Error!")
         }
     })
 }
-
+//Function to update view count is called on load 
 window.onload = () => {updateViewCount()}
-
 //Checks local storage to see if user preference is saved to darkmode and switches to it if so
 if (localStorage.getItem("darkmode") == "true")
 {
