@@ -1,14 +1,33 @@
-// Checks local storage to see if user preference is saved to darkmode and switches to it if so
+//Fill in comment here
+function updateViewCount()
+{
+    fetch('https://nategoodmandevapi.herokuapp.com/views',
+        {"method":"POST"})
+    .then((response) => { 
+        if (response.status == 200) 
+        {
+            console.log("Yay")
+        }
+        else 
+        {
+            console.log("error")
+        }
+    })
+}
+
+window.onload = () => {updateViewCount()}
+
+//Checks local storage to see if user preference is saved to darkmode and switches to it if so
 if (localStorage.getItem("darkmode") == "true")
 {
     document.body.classList =("darkmode");
 }
-// Swaps between light and dark mode on button click
+//Swaps between light and dark mode on button click
 function swapMode() 
 {
     document.body.classList.toggle("darkmode")        
 }
-// Save darkmode preference to local storage
+//Save darkmode preference to local storage
 function updateLocalPref()
 {
     if (localStorage.getItem("darkmode") == "true")
@@ -20,7 +39,7 @@ function updateLocalPref()
         localStorage.setItem("darkmode", true)
     }
 }
-// Calls both functions in one; for use as button onclick function in index.html
+//Calls both functions in one; for use as button onclick function in index.html
 function onClick()
 {
     swapMode()
