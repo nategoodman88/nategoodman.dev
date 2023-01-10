@@ -1,4 +1,4 @@
-//Fucntion to use fetch; calls post to my api to update view count in my database
+//Function to use fetch; calls post to my api to update view count in my database
 function updateViewCount()
 {
     fetch('https://nategoodmandevapi.herokuapp.com/views',
