@@ -82,3 +82,12 @@ h2, h3, h4, h5, h6
     word-break: break-word;
     border: 0;
   }
+
+  .hiddenButton {
+  
+    opacity: 0.1;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+
+  }
