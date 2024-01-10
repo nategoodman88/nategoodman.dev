@@ -28,13 +28,14 @@ h2, h3, h4, h5, h6
     font-size: larger;
 }
 /*Sets CSS of the headshot*/
-.headshot
-{
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
+.headshot {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+    object-fit: cover; 
+    object-position: center center; 
 }
 /*Sets CSS of the contact icon pictures*/
 .contact-icon
